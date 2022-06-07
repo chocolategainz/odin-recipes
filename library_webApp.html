@@ -6,11 +6,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Rubik&display=swap');
 </style>
 
+<!--Stylesheet for 'Add book title'-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&family=Patrick+Hand&family=Rubik&display=swap" rel="stylesheet">
+
 <title>Library</title>
 <meta charset="UTF-8">
 <link rel = "stylesheet" href = "library_webApp.css"/>
 </head>
 </html>
+
+<div class = "conatiner"> 
+<div class = "books">
+</div>
+  </div>
 
 
 <header>
@@ -31,7 +41,70 @@
 </subheading>
 </h4>
 
-<!--Designing a card to display each book-->
+<div>
+  <button id = "newBook">+ New Book</button>
+</div>
 
+ <div class = form-content> 
+  
+  <div class = formHeader> 
+   <h2 id = formTitle>Add a book</h2>
+
+<button class = "exit" type = "button"> 
+ <span>X</span>
+</button>
+</div>
+
+    <!--Using HTML Forms to create a card and display each book on that card-->
+<form>
+
+  <div>
+  <label for = "bookTitle"> What is the title of your book?</label>
+    <div>
+  <input type = "text" id = "bookTitle" name = "bookTitle"
+  placeholder = "Catching Fire" required = "">
+  </div>
+</div>
+
+<br>
+<div>
+<label for = "bookAuthor">What is the author's name of your chosen book?</label>
+  <div>
+<input type = "text" id = "bookAuthor" name = "bookAuthor" placeholder = "Samantha Collins" required = "">
+  </div>
+</div>
+
+<br>
+<div>
+<label for = "bookPages"> How many pages does your book contain?</label>
+  <div>
+
+    <!--Allows the user to select a number. 
+    The required button makes it mandatory for the user to answer-->
+<input type = "number" id = "bookPages" min = "1" required = "">
+   </div>
+</div>
+
+<!--The readbook label must be a button-->
+<br>
+<div>
+<label for = "readBook">Have you finished reading this book?</label>
+<input type="checkbox" id = "readBook" name = "readBook" required = "">
+</div>
+
+<br>
+<input type = "submit" class = "submit-button" value = "Submit">
+      </form>
+</div>
+
+<!--pop up for my form, so that when the user clicks, the form
+  pops up on the screen-->
+
+
+  
+
+ 
+   
+ 
 
 <script src="library_webApp.js"></script> 

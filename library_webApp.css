@@ -8,8 +8,49 @@
     font-weight: lighter;
 }
 
-#formContent {
-    background-color: lightcoral;
-
+.form-content {
+    background-color: rgb(3, 252, 211);
+    max-width: 60%;
+    margin-left: 145px;
+    padding-left: 40px;
+    font-family: 'Montserrat', sans-serif;
 }
 
+#formTitle {
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 130px;
+    padding-top:20px;
+}
+
+.exit {
+    position:relative;
+   bottom: 46.5px;
+   border-radius: 50%;
+font-weight: bolder;
+padding: 10px 10px;
+border-color: rgb(235, 223, 9);
+transition-duration: 0.5s;
+}
+
+.exit:hover {
+background-color: red;
+}
+
+.submit-button {
+    margin-bottom: 10px;
+    background-color: white;
+    color:black;
+    border-color: rgb(235, 223, 9);
+    transition-duration: 0.5s;
+    border-width: 2px 2px;
+    padding: 10px 20px;
+    font-weight: bolder;
+}
+
+.submit-button:hover {
+background-color: #08ff14;
+}
+
+.card {
+background:aquamarine;
+}
